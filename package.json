@@ -1,0 +1,17 @@
+{
+	"id":"com.moimz.minitalk.plugin.notice",
+	"icon":"xi xi-notice",
+	"title":{
+		"ko":"공지사항 플러그인"
+	},
+	"version":"1.0.0",
+	"description":{
+		"ko":"미니톡 채팅위젯 채팅영역에 고정된 메시지를 출력합니다."
+	},
+	"author":{
+		"name":"Arzz",
+		"email":"arzz@arzz.com"
+	},
+	"homepage":"https://www.minitalk.io",
+	"language":"ko"
+}

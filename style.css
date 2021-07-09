@@ -1,0 +1,14 @@
+/**
+ * 이 파일은 미니톡 공지사항 플러그인의 일부입니다. (https://www.minitalk.io)
+ *
+ * 미니톡 공지사항 영역의 스타일을 지정한다.
+ * 
+ * @file /plugins/notice/style.css
+ * @author Arzz (arzz@arzz.com)
+ * @license MIT License
+ * @version 1.0.0
+ * @modified 2021. 7. 9.
+ */
+div[data-role=frame] > div[data-role=notice] {position:fixed; top:0; left:0; width:100%; padding:14px; box-sizing:border-box; background:#fffeeb; border-bottom:1px solid #e0d0bc; border-top:1px solid #e0d0bc; font-size:0; z-index:1; margin-top:-1px;}
+div[data-role=frame] > div[data-role=notice] > div {width:calc(100% - 20px); font-size:12px; color:#df2933; display:inline-block; line-height:20px; vertical-align:top;}
+div[data-role=frame] > div[data-role=notice] > button {display:inline-block; width:20px; height:20px; background:red; vertical-align:top; border:0; background:transparent; color:#222; cursor:pointer;}
