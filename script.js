@@ -49,7 +49,7 @@ Minitalk.on("connect",function(minitalk,channel,user) {
 	/**
 	 * 다시 표시되지 않는 시간내라면 표시하지 않는다.
 	 */
-	if (false && minitalk.storage("@notice") !== null && minitalk.storage("@notice") > moment().unix()) return;
+	if (minitalk.storage("@notice") !== null && minitalk.storage("@notice") > moment().unix()) return;
 	
 	/**
 	 * 채팅위젯 영역에 공지사항 영역을 추가한다.
