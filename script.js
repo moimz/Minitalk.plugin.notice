@@ -7,7 +7,7 @@
  * @author Arzz (arzz@arzz.com)
  * @license MIT License
  * @version 1.0.0
- * @modified 2021. 7. 9.
+ * @modified 2021. 9. 27.
  */
 if (Minitalk === undefined) return;
 
@@ -45,6 +45,19 @@ Minitalk.on("connect",function(minitalk,channel,user) {
 	 */
 	var $notice = $("div[data-role=frame] > div[data-role=notice]");
 	if ($notice.length == 1) return;
+	
+	/**
+	 * 특정채널에만 공지사항을 표시하고 싶거나, 특정 채널에 다른 메시지를 보이고자 하는 경우
+	 * 아래의 주석을 제거하고 사용자환경에 맞게 수정하여 사용하시면 됩니다.
+	 *
+	if (minitalk.channel == "example") { // 미니톡 채널이 example 인 경우에 보일 메시지
+		me.message = "이 메시지는 example 채널에서 보이게 됩니다.
+	}
+	
+	if (minitalk.channel != "notice") { // 미니톡 채널이 notice 가 아닌 경우에는 공지사항을 출력하지 않는다.
+		return;
+	}
+	 */
 	
 	/**
 	 * 다시 표시되지 않는 시간내라면 표시하지 않는다.
