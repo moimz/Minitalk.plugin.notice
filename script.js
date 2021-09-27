@@ -6,7 +6,7 @@
  * @file /plugins/notice/script.js
  * @author Arzz (arzz@arzz.com)
  * @license MIT License
- * @version 1.0.0
+ * @version 2.0.0
  * @modified 2021. 9. 27.
  */
 if (Minitalk === undefined) return;
@@ -30,7 +30,7 @@ me.setPosition = function() {
 	var $notice = $("div[data-role=frame] > div[data-role=notice]");
 	if ($notice.length == 0) return;
 	
-	var $chat = $("section[data-role=chat]");
+	var $chat = $("section[data-section=chat]");
 	$notice.css("top",$chat.offset().top);
 	$notice.css("left",$chat.offset().left);
 	$notice.css("width",$chat.outerWidth());
